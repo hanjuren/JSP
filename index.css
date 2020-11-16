@@ -72,6 +72,7 @@ ul:after{
     height: 100%;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 .image-view input{	
     display: none;	
@@ -110,3 +111,46 @@ ul:after{
 #radio3:checked ~ .first{	
     margin-left: -210%;	
 }
+
+/* 상품 리스트 */
+.item-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.item-list{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    border: 1px solid gold;
+    width: 20%;
+    height: 350px;
+}
+.item-img{
+    width: 100%;
+    height: 220px;
+    
+}
+.item-img img{
+    display : block;
+    margin : auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 100%;
+}
+.item span{
+    font-weight: bold;
+}
+.brand{
+    height: 20;
+}
+.item-info #info{
+    font-size: 5px;
+}
+.item-info #price{
+    font-size: 15px;
+}
+
