@@ -47,6 +47,9 @@ ul:after{
     padding: 14px 16px;
     text-decoration: none;
 }
+.menu-last{
+    margin-right: 18%;
+}
 .menu-user{
     justify-self: flex-end;
 }
@@ -90,12 +93,7 @@ ul:after{
     justify-content: center;  	
 }	
 .manual-btn{	
-    border: 2px solid #40D3DC;	
-    padding: 5px;	
-    border-radius: 10px;	
-    cursor: pointer;	
-    transition: 1s;	
-    margin-top: 400px;
+    display: none
 }	
 .manual-btn:not(:last-child){	
     margin-right: 40px;	
@@ -107,7 +105,7 @@ ul:after{
     margin-left: 0;	
 }	
 #radio2:checked ~ .first{	
-    margin-left: -105%;	
+    margin-left: -103%;	
 }	
 #radio3:checked ~ .first{	
     margin-left: -210%;	
