@@ -2,6 +2,8 @@ body{
     margin:0;
     padding: 0;
     background-color: #FBF2EF;
+    display: flex;
+    flex-direction: column;
     
 }
 /* 메인 로고 */
@@ -222,7 +224,8 @@ ul:after{
     height: 250px;
     border-top :  2px solid #F6D8CE;
     display: flex;
-    justify-content: flex-end;
+    margin-top: auto;
+    
 }
 .footer-1{
     width:75%;
