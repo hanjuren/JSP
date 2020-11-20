@@ -1,17 +1,23 @@
 body{
     margin:0;
-    padding: 0; 
+    padding: 0;
+    background-color: #FBF2EF;
+    
 }
 /* 메인 로고 */
 .logo-box{
     display: flex;
     justify-content: center;
     height: 60px;
+    align-items: center;
+    margin-top: 15px;
+    
 }
 .logo-box h3{
     color: lightslategray;
     font-size: 30px;
 }
+
 /* 메뉴 */
 .container {
     width: 100%;
@@ -26,19 +32,26 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #FBF2EF;
 }
 ul:after{
     content:'';
     display: block;
     clear:both;
 }
+
 .menu a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+.home a:hover {
+    background-color: #F6D8CE;
+}
+.menu a:hover {
+    background-color: #F8ECE0;
 }
 .home a {
     display: block;
@@ -60,12 +73,16 @@ ul:after{
     padding: 14px 16px;
     text-decoration: none;
 }
+.menu-last a:hover {
+    background-color: #F8ECE0;
+}
 /* 메인 이미지  */
 .image-container{
     display: flex;	
     width: 100%;	
     height: 400px;	
     justify-content: center;
+    background-color: #FBF2EF;
 }
 .image-view{
     width: 60%;
@@ -74,6 +91,7 @@ ul:after{
     overflow: hidden;
     position: relative;
 }
+
 .image-view input{	
     display: none;	
 }
@@ -81,7 +99,13 @@ ul:after{
     width: 100%;
     height: 100%;	
     transition: 2s;	
-    margin-left: 20px;
+    
+}
+.slide img{
+    width: 980px;
+    height: 100%;
+    min-width: 500px;
+    
 }
 
 .navigation-manual{	
@@ -104,38 +128,55 @@ ul:after{
     margin-left: 0;	
 }	
 #radio2:checked ~ .first{	
-    margin-left: -103%;	
+    margin-left: -100%;	
 }	
 #radio3:checked ~ .first{	
-    margin-left: -210%;	
+    margin-left: -200%;	
 }
 
 /* 상품 리스트 */
+.best-item{
+    background-color: #FBF2EF; 
+    height: 50px; 
+}
+
+.best-item span{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900;
+    color: #F5A9A9;
+    margin-left: 15%;
+}
 .item-container{
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
+    background-color: #FBF2EF;
 }
 .item-list{
     width: 70%;
-    display: flex;  
+    display: flex; 
+    
 }
 .item-list ul{
     width: 100%;
     margin-bottom: 50px;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #FBF2EF;
 }
 .item-list li{
     width: 200px;
     cursor: pointer;
+    background-color: #FBF8EF;
 }
 
 .item{
-    border: 1px solid gold;
+    border: 1px solid 
     width: 100%;
     height: 350px;
+    
 }
 .item-img{
     width: 100%;
@@ -148,18 +189,31 @@ ul:after{
     margin-top: 20px;
     width: 80%;
     height: 100%;
+    
 }
 .item span{
     font-weight: bold;
 }
 .brand{
+    font-size: 10px;
+    color: gray;
     height: 20;
+    margin-left: 10px;
+}
+.item-info {
+    font-size: 12px;
+    margin: 10px 10px; 
 }
 .item-info #info{
-    font-size: 5px;
+      
+    font-size: 15px;
+     
 }
 .item-info #price{
     font-size: 15px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 
