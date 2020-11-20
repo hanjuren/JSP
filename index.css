@@ -222,6 +222,7 @@ ul:after{
     height: 250px;
     border-top :  2px solid #F6D8CE;
     display: flex;
+    justify-content: flex-end;
 }
 .footer-1{
     width:75%;
@@ -258,6 +259,9 @@ ul:after{
 }
 .number span{
     color: red;
+}
+.footer-2{
+    margin-right: 20px;
 }
 .number-2{
     margin-top: 20px;
