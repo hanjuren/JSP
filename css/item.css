@@ -1,0 +1,15 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #FBF2EF;
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.main{
+    flex: 1;
+}

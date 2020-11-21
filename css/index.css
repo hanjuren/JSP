@@ -2,82 +2,18 @@ body{
     margin:0;
     padding: 0;
     background-color: #FBF2EF;
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
     display: flex;
     flex-direction: column;
-    
+    min-height: 100vh;
 }
-/* 메인 로고 */
-.logo-box{
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    align-items: center;
-    margin-top: 15px;
-    
-}
-.logo-box h3{
-    color: lightslategray;
-    font-size: 30px;
+.main-content{
+    flex:1;
 }
 
-/* 메뉴 */
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.menu-bar{
-    margin-left: 17%;
-}
-ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #FBF2EF;
-}
-ul:after{
-    content:'';
-    display: block;
-    clear:both;
-}
-
-.menu a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.home a:hover {
-    background-color: #F6D8CE;
-}
-.menu a:hover {
-    background-color: #F8ECE0;
-}
-.home a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.menu-last{
-    margin-right: 18%;
-}
-.menu-user{
-    justify-self: flex-end;
-}
-.menu-user a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.menu-last a:hover {
-    background-color: #F8ECE0;
-}
 /* 메인 이미지  */
 .image-container{
     display: flex;	
@@ -152,7 +88,7 @@ ul:after{
 }
 .item-container{
     width: 100%;
-    height: 400px;
+    
     display: flex;
     justify-content: center;
     background-color: #FBF2EF;
@@ -166,7 +102,7 @@ ul:after{
     width: 100%;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #FBF2EF;
 }
 .item-list li{
@@ -218,65 +154,3 @@ ul:after{
     margin-right: 10px;
     margin-top: 10px;
 }
-/* footer*/
-.footer-container{
-    width: 100%;
-    height: 250px;
-    border-top :  2px solid #F6D8CE;
-    display: flex;
-    position: fixed;
-    left: 0; width: 100%; bottom:0;
-    
-}
-.footer-1{
-    width:75%;
-}
-.company{
-    margin-top: 15px;
-    margin-left: 15%;
-    font-size: 13px;
-    color: gray;
-}
-.company span{
-    color: #585858;
-    font-size: 17px;
-    font-weight: 800;
-}
-.footer-info{
-    width:70%;
-    margin-left: 15%;
-    margin-top: 5%;
-    font-size: 10px;
-    color: gray;
-}
-.number{
-    height: 30%;
-    margin-top: 40px;
-    font-size: 12px;
-    color: gray;
-}
-.number #customer{
-    height: 10px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #585858;
-}
-.number span{
-    color: red;
-}
-.footer-2{
-    margin-right: 20px;
-}
-.number-2{
-    margin-top: 20px;
-    font-size: 12px;
-    color: gray;
-}
-.number-2 span{
-    font-size: 15px;
-    font-weight: 700;
-    color:#585858;
-}
-
-
-
