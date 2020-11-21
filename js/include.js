@@ -1,5 +1,6 @@
-includeHTML(document.querySelector('#footer'), '/item/footer.html');
-includeHTML(document.querySelector('#header'), '/item/header.html');
+includeHTML(document.querySelector('#footer'), 'footer.html');
+includeHTML(document.querySelector('#header'), 'header.html');
+
 
 
 function includeHTML(divContainer, urlHTML) {
