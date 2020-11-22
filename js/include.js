@@ -2,7 +2,6 @@ includeHTML(document.querySelector('#footer'), 'footer.html');
 includeHTML(document.querySelector('#header'), 'header.html');
 
 
-
 function includeHTML(divContainer, urlHTML) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {

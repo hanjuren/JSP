@@ -3,15 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/login.css" />
-<title>개인 홈페이지</title>
+<title>Login</title>
+<script src="js/login.js"> </script>
 </head>
 <body>
-    <div class="wrappera">
-        <div class="login-box">
-            <div class="login">aaa</div>
+    <div class="wrapper">
+            <div class="logo">
+                <h3>MY PET</h3>
+            </div> 
             
-        </div>
-    </div>
+            <div class="login">
+                <div class="login-box">
+                    
+                    <form name="login" action="login.jsp" method="post">
+                        <div>
+                            <input class="input-id" type="text" name="uid" placeholder="아이디"  maxlength="15"/>
+                        </div>
+                        <div>
+                            <input class="input-pwd" type="password" name="pwd" placeholder="비밀번호" maxlength="15" required/> 
+                        </div>
+                        <div class="login-btn">
+                            <button type="button" class="set" onclick="dologin()">로그인</button>
+                        </div>
+                    </form>
+            </div>
+            </div>
+            
+    
 
 
 </body>
