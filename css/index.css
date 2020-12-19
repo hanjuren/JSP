@@ -114,40 +114,12 @@ ul:after{
     width: 100%;
     height: 100%;	
     transition: 2s;	
-    
-}
-.slide img{
-    width: 980px;
-    height: 100%;
-    min-width: 500px;
-    
+    background-image: url('../images/imageshow2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.navigation-manual{	
-    position: absolute;	
-    width: 1000px;	
-    margin-top: -40px;	
-    display: flex;	
-    justify-content: center;  	
-}	
-.manual-btn{	
-    display: none
-}	
-.manual-btn:not(:last-child){	
-    margin-right: 40px;	
-}	
-.manual-btn:hover{	
-    background: #40D3DC;	
-}	
-#radio1:checked ~ .first{	
-    margin-left: 0;	
-}	
-#radio2:checked ~ .first{	
-    margin-left: -100%;	
-}	
-#radio3:checked ~ .first{	
-    margin-left: -200%;	
-}
+
 
 /* 상품 리스트 */
 .best-item{
@@ -233,7 +205,7 @@ ul:after{
 /* footer*/
 .footer-container{
     width: 100%;
-    height: 250px;
+    height: 200px;
     border-top :  2px solid #F6D8CE;
     display: flex;
 }
@@ -285,4 +257,77 @@ ul:after{
     font-size: 15px;
     font-weight: 700;
     color:#585858;
+}
+
+/* 게시판페이지 css */
+.notice{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bestfaq-title{
+    width: 60%;
+    height: 30px;
+}
+
+.bestfaq-title span{
+    font-size: 22px;
+    font-weight: 600;
+}
+.notice-title{
+    width: 60%;
+    height: 30px;
+    margin-top: 20px;
+}
+.notice-title span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.bestfaq {
+    width: 60%;
+    margin-top: 10px;
+}
+
+#best-faq{
+    width:100%;
+    border-spacing: 0;
+}
+#best-faq th{
+    font-size: 15px;
+    background-color: #dcdcdc;
+}
+#best-faq td{
+    text-align: center;
+}
+
+#best{
+    width:80%;
+    border-spacing: 0;
+    margin-top: 10px;
+}
+#best th{
+    font-size: 15px;
+    background-color: #dcdcdc;
+}
+#best td{
+    text-align: center;
+    border: 1px solid #dcdcdc;
+}
+
+
+.bestfa {
+    width: 60%;
+}
+.notice a{
+    text-decoration: none;
+    color: black;
+}
+.notice tr:hover{
+    background-color: #F8ECE0; 
+}
+.notice a:hover{
+    text-decoration: underline;
 }

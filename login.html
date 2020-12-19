@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
             <div class="logo">
-                <h3>MY PET</h3>
+                <a href="index.jsp"><h3>MY PET</h3></a>
             </div> 
             
             <div class="login">
@@ -17,7 +17,7 @@
                     
                     <form name="login" action="login.jsp" method="post">
                         <div>
-                            <input class="input-id" type="text" name="uid" placeholder="아이디"  maxlength="15"/>
+                            <input class="input-id" type="text" name="uid" placeholder="아이디" autocomplete="false"  maxlength="15"/>
                         </div>
                         <div>
                             <input class="input-pwd" type="password" name="pwd" placeholder="비밀번호" maxlength="15" required/> 
@@ -28,9 +28,6 @@
                     </form>
             </div>
             </div>
-            
-    
-
 
 </body>
 </html>

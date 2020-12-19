@@ -9,7 +9,144 @@ body{
     display: flex;
     height: 100vh;
     flex-direction: column;
+    
 }
 .main{
     flex: 1;
+    display: flex;
+    align-content: ;
+    flex-direction: column;
+    
 }
+.img {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+}
+.item-img{
+    width: 30%;
+    height: 100%;
+}
+.item-img img{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    width: 30%;
+    height: 100%;
+}
+.item-info{
+    width:100%;
+    height: 60%;
+}
+#item-title {
+    font-size: 25px;
+    font-weight: 900;
+    height: 60px;
+    margin-left: 30px;
+}
+#info {
+    width: 300px;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px solid rosybrown;
+    height: 30px;
+    margin-left: 30px;
+}
+#item-content {
+    font-size: 15px;
+    border-bottom: 1px solid rosybrown;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#price {
+    height: 30px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.order{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 5%;
+}
+.orderbtn{
+    width: 6em;
+    height: 50px;
+    border: 1px solid rosybrown;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+}
+.order a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.order input{
+    height: 20px;
+    width: 35px;
+    text-align: center;
+}
+.pickbtn{
+    width: 6em;
+    height: 50px;
+    border: 1px solid rosybrown;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+.review {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.review-box{
+    width: 70%;
+    border-top: 2px solid rosybrown;
+}
+#review-title {
+    font-style: oblique;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
+    height: 25px;
+}
+#review-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#review-content table {
+    width: 100%;
+    margin-top: 30px;
+}
+#review-content table tr{
+    height: 30px;
+}
+#review-content span {
+    margin-left: 20px;
+    font-weight: bold;  
+}
+#count {
+    margin-left: 20px;
+    font-size: 10px;
+    color: grey;
+}
+#content{
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: normal;
+}
+#table-content{
+    border-bottom: 2px solid rosybrown;
+}
+
+

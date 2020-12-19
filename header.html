@@ -16,6 +16,10 @@
 .logo-box a{
     text-decoration: none;
 }
+.logo-box a:focus{
+    outline: none;
+    border: 0;
+}
 
 /* 메뉴 */
 .container {
@@ -78,22 +82,16 @@ ul:after{
 </style>
 
 <div class="logo-box">
-    <a href="../index.html"><h3>MY PET</h3></a>
+    <a href="index.jsp"><h3>MY PET</h3></a>
 </div>
 <!-- 메뉴바 -->
 <div class="container">
     <div class="menu-bar">
             <ul>
-                <li class="home"><a href="../index.html">Home</a></li>
-                <li class="menu"><a href="#news">Best</a></li>
-                <li class="menu"><a href="#contact">Market</a></li>
-                <li class="menu"><a href="#about">Notice</a></li> 
+                <li class="home"><a href="index.jsp">Home</a></li>
+                <li class="menu"><a href="market.jsp">Market</a></li>
+                <li class="menu"><a href="board.jsp">Notice</a></li> 
             </ul> 
     </div>
-    <div class="menu-last">
-        <ul>
-            <li class="menu-user"><a href="login.html">Login</a></li> 
-            <li class="menu-user"><a href="join.html">Join</a></li> 
-        </ul>
-    </div>          
+              
 </div>

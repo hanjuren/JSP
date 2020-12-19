@@ -1,4 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.sql.*" %>
+<%
+    request.setCharacterEncoding("UTF-8");
 
+    String uid = (String) session.getAttribute("uid");
+    String uname = (String) session.getAttribute("uname");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,46 +17,43 @@
 <div class="wrapper">  
     
     <div class="logo-box">
-        <a href="index.html"><h3>MY PET</h3></a>
+        <a href="index.jsp"><h3>MY PET</h3></a>
     </div>
     <!-- 메뉴바 -->
     <div class="container">
         <div class="menu-bar">
                 <ul>
-                    <li class="home"><a href="index.html">Home</a></li>
-                    <li class="menu"><a href="#news">Best</a></li>
-                    <li class="menu"><a href="#contact">Market</a></li>
-                    <li class="menu"><a href="#about">Notice</a></li> 
+                    <li class="home"><a href="index.jsp">Home</a></li>
+                    <li class="menu"><a href="market.jsp">Market</a></li>
+                    <li class="menu"><a href="board.jsp">Notice</a></li> 
                 </ul> 
         </div>
         <div class="menu-last">
             <ul>
+            <%
+            if(uid == null){
+            %>
                 <li class="menu-user"><a href="login.html">Login</a></li> 
-                <li class="menu-user"><a href="join.html">Join</a></li> 
+                <li class="menu-user"><a href="join.html">Join</a></li>
+            <%
+            } else {
+            %>
+                <li class="menu-user"><a href="logout.jsp">Logout</a></li>
+                <li class="menu-user"><a href="mypage.jsp">my page</a></li>
+            <%
+            }
+            %>    
             </ul>
         </div>          
     </div>
         <!-- 메인 이미지 -->
         <div class="image-container">
             <div class="image-view">
-                <input type="radio" name="radid-btn" id="radio1">	
-                <input type="radio" name="radid-btn" id="radio2">	
-                <input type="radio" name="radid-btn" id="radio3">
-                <div class="slide first">	
-                    <img src="images/imageshow2.jpg">	
+                
+                <div class="slide">	
+                    	
                 </div>	
-                <div class="slide">	
-                    <img src="images/imageshow1.jpg">	
-                </div>
-                <div class="slide">	
-                    <img src="images/imageshow3.jpg">	
-                </div>
-            
-                <div class="navigation-manual">	
-                    <label for="radio1" class="manual-btn"></label>	
-                    <label for="radio2" class="manual-btn"></label>	
-                    <label for="radio3" class="manual-btn"></label>	
-                </div>
+                
             </div>
         </div>
     <div class="main-content">
@@ -151,18 +155,18 @@
                 <div id="customer">고객센터 <span style="color:red;">1599-0001</span></div>
                 <br>
                 08378) 서울특별시 구로구 디지털로 306 (구로동) <br>
-                Fax : 02-849-4962 / E-mail : customerservice@11st.co.kr
+                Fax : 02-849-4962 / E-mail : customerservice@mypet.co.kr
             </div>
             <div class="number-2">
                 <span>전자금융거래분쟁담당</span><br>
                 Tel : 1599-0110 / Fax : 02-849-4962<br>
-                E-mail : customerservice@11st.co.kr
+                E-mail : customerservice@mypet.co.kr
             </div>
         </div>
     </div>
 </div>
 
-    <script src="js/slider.js"></script>
+    
     <script src="js/app.js"></script>
     
 </body>

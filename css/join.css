@@ -1,0 +1,104 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF2EF;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.logo h3{
+    color: lightslategray;
+    font-size: 50px;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+}
+.join-content{
+    width: 40%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.info{
+    height: 50px;
+    width: 18%;
+    text-align: left;
+    border-bottom: 3px solid gray;
+}
+.join-comment1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.join-comment1 span{
+    font-weight: 900;
+    font-size: 30px;
+}
+.join-comment2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.join-comment2 span{
+    font-weight: 600;
+    font-size: 15px;
+}
+.join-box{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.join-form{
+    display: flex;
+    justify-content: center;
+}
+.join-content input{
+    padding: 15px;
+    width: 300px;
+    margin-top: 5px; 
+}
+.join-content label{
+    font-weight: 800;
+}
+.join-form div:first-child{
+    margin-top: 20px;
+}
+.join-form div:nth-child(2),
+.join-form div:nth-child(3),
+.join-form div:nth-child(4){
+    margin-top: 10px;  
+}
+.join_btn{
+    width: 300px;
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.join_btn:hover{
+    background-color: #F6D8CE;
+}

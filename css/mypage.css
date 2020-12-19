@@ -1,0 +1,257 @@
+*{
+	font-family: 'Nanum Barun Gothic', sans-serif;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-color: #FBF2EF;
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content{
+    flex:1;
+}
+/* 메인 로고 */
+.logo-box{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+.logo-box h3{
+    color: lightslategray;
+    font-size: 30px;
+    cursor: pointer;
+}
+.logo-box a{
+    text-decoration: none;
+}
+
+/* 메뉴 */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar{
+    margin-left: 17%;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF2EF;
+}
+ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+.menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.home a:hover {
+    background-color: #F6D8CE;
+}
+.menu a:hover {
+    background-color: #F8ECE0;
+}
+.home a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu-last{
+    margin-right: 18%;
+}
+.menu-user{
+    justify-self: flex-end;
+}
+.menu-user a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu-last a:hover {
+    background-color: #F8ECE0;
+}
+
+/* footer*/
+.footer-container{
+    width: 100%;
+    height: 250px;
+    border-top :  2px solid #F6D8CE;
+    display: flex;
+}
+.footer-1{
+    width:75%;
+}
+.company{
+    margin-top: 15px;
+    margin-left: 15%;
+    font-size: 13px;
+    color: gray;
+}
+.company span{
+    color: #585858;
+    font-size: 17px;
+    font-weight: 800;
+}
+.footer-info{
+    width:70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-size: 10px;
+    color: gray;
+}
+.number{
+    height: 30%;
+    margin-top: 40px;
+    font-size: 12px;
+    color: gray;
+}
+.number #customer{
+    height: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #585858;
+}
+.number span{
+    color: red;
+}
+.footer-2{
+    margin-right: 20px;
+}
+.number-2{
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+}
+.number-2 span{
+    font-size: 15px;
+    font-weight: 700;
+    color:#585858;
+}
+
+.buyitem{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.title1{
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid;
+    margin-left: 20%;
+}
+.order-table{
+    width: 100%;
+}
+#table{
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-spacing: 0px;
+    
+}
+#timage {
+    width: 200px;       
+    height: 150px;
+}
+#timage img{
+    width: 100%;
+    height: 100%;
+}
+#lasttr{
+    border-bottom: 1px solid rosybrown;
+}
+#total-price{
+    width:400px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 500px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+button{
+    color: rosybrown;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid  rosybrown;
+    float: right;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #F6D8CE;
+    color: black;
+}    
+button:focus{
+    border: 1px solid  rosybrown;
+    outline: none;
+}
+.review{
+    width: 100%;
+    height: 500px;
+}
+.review table {
+    width: 50%;
+    border: 1px solid rosybrown;
+    margin-left: 20%;
+    border-spacing: 0px;
+}
+.review table td {
+    border: 1px solid rosybrown;
+    text-align: center;
+}
+#re-title{
+    width: 99%;
+    height: 99%;
+    border: 0;
+}
+#re-title:focus{
+    outline: none;
+    border: 0;
+}
+#text-area{
+    width: 99%;
+    height: 99%;
+    border: 0;
+    resize: none;
+}
+#content{
+    height: 300px;
+}
+#text-area:focus{
+   outline: none;
+    border: 0;
+}
+.rebtn{
+    width: 50%;
+    margin-top: 10px;
+}
+#rebtn{
+    width: 130px;
+    margin-left: 15%;
+
+}
